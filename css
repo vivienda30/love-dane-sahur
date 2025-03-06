@@ -1,0 +1,147 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(45deg, #ff9e2c, #f8a5c2);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(-100px);
+    animation: slideUp 1s ease-out forwards;
+}
+
+/* Smooth Slide Up Animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Message Box Styling */
+.message-box h2 {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #f96d00;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #f76300;
+    transform: translateY(-4px);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Niat Buka Puasa Section */
+.niat-container {
+    display: none;
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+/* Niat Animation */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Arabic Text Styling */
+.arabic {
+    font-size: 32px;
+    font-family: 'Traditional Arabic', sans-serif;
+    color: #333;
+    margin: 20px 0;
+    animation: fadeInArabic 1.5s ease-in-out;
+}
+
+/* Transliteration Styling */
+.transliteration {
+    font-size: 20px;
+    font-style: italic;
+    color: #5a5a5a;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Translation Styling */
+.translation {
+    font-size: 20px;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Hidden Class for Elements */
+.hidden {
+    display: none;
+}
+
+/* Animation for Arabic Text */
+@keyframes fadeInArabic {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
